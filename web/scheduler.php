@@ -14,6 +14,7 @@
 			$current_hour = date("H");
 			$current_minute = date("i");
 			$current_duration = (int)($s->off_tod);
+			$current_end = $current_hour . ":" . ($current_minute + $current_duration);
 			$current_dow = date("N");
 			
 			$sun = get_sunset_sunrise();
@@ -33,7 +34,8 @@
 					endif;
 					
 // 					if (strpos($s->off_dow,  $current_dow)!== false) :
-						if ( $s->off_tod==$current_time  ) call_HA($s->entity_id,"off");					
+						if ( $current_end==$current_time  ) call_HA($s->entity_id,"off");
+// 						if ( $s->off_tod==$current_time  ) call_HA($s->entity_id,"off");					
 						if ( strtolower($s->off_tod)=="sunset"  && $is_sunset  ) call_HA($s->entity_id,"off");
 						if ( strtolower($s->off_tod)=="sunrise" && $is_sunrise ) call_HA($s->entity_id,"off");
 // 					endif;
