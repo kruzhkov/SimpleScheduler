@@ -11,7 +11,7 @@
 		if ($seconds=="00") :
 			
 			$current_time = date("H:i");
-			$array_on = explode(";", $s->on_tod);
+			$array_on = explode(":", $s->on_tod);
 			$t_hour = $array_on[0];
 			$t_minute = (int)$array_on[1];
 			$current_duration = (int)($s->off_tod);
