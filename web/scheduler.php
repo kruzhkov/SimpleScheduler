@@ -16,6 +16,8 @@
 			$current_duration = (int)($s->off_tod);
 			$current_end = $current_hour . ':' . (string)($current_minute + $current_duration);
 			$current_dow = date("N");
+			echo '############';
+			echo $current_end;
 			
 			$sun = get_sunset_sunrise();
 			$is_sunset  = (bool)($current_time==$sun["sunset"]);
