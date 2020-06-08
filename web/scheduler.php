@@ -12,9 +12,9 @@
 			
 			$current_time = date("H:i");
 			$current_hour = date("H");
-			$current_minute = date("i");
+			$current_minute = (int)date("i");
 			$current_duration = (int)($s->off_tod);
-			$current_end = $current_hour . ":" . ($current_minute + $current_duration);
+			$current_end = $current_hour . ":" . (string)($current_minute + $current_duration);
 			$current_dow = date("N");
 			
 			$sun = get_sunset_sunrise();
