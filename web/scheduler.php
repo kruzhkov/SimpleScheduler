@@ -11,10 +11,11 @@
 		if ($seconds=="00") :
 			
 			$current_time = date("H:i");
-			$current_hour = date("H");
-			$current_minute = (int)date("i");
+			$array_on = explode(";", $s->on_tod);
+			$t_hour = $array_on[0];
+			$t_minute = (int)$array_on[1];
 			$current_duration = (int)($s->off_tod);
-			$current_end = $current_hour . ':' . (string)($current_minute + $current_duration);
+			$current_end = $t_hour . ':' . (string)($t_minute + $current_duration);
 			$current_dow = date("N");
 			echo '############';
 			echo $current_end;
