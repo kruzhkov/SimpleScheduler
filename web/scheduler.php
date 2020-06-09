@@ -34,6 +34,7 @@ echo $current_duration;
 			$current_end = '';
 			$d = new DateTime($current_time);
 			$interval = DateInterval::createFromDateString((string)$current_duration + " min");
+			echo $interval;
 // 			$d->add($interval);
 // 			$current_end = (string)$d;
 	
