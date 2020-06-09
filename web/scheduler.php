@@ -32,7 +32,7 @@ echo $current_duration;
 // 			echo '#####';
 
 			$current_end = '';
-			$d = new DateTime('2000-01-01' . $current_time);
+			$d = new DateTime($t_hour . ':' . $t_minute);
 			$interval = DateInterval::createFromDateString((string)$current_duration . " min");
 			echo $d->format('Y-m-d H:i');
 // 			$d->add($interval);
