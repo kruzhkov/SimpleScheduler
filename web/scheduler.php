@@ -34,11 +34,10 @@
 				$current_end = $t_hour . ':' . (string)($t_minute + $current_duration);
 			else :
 				$t_hour = (int)($t_minute + $current_duration) / 60;
-				$t_m = 
-				$current_end = $t_hour . ':' . (string)($t_minute + $current_duration);
+				$t_m = ($t_minute + $current_duration) - $t_hour * 60;
+				$current_end = $t_hour . ':' . (string)$t_m;
 			endif;
-echo '##9';
-			$current_end = $t_hour . ':' . (string)($t_minute + $current_duration);
+echo $current_end;
 			$current_dow = date("N");
 			echo $current_end;
 			
