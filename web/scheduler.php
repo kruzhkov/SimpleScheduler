@@ -31,21 +31,13 @@ echo $current_duration;
 
 // 			echo '#####';
 
-			$d = new DateTime($current_time);
-echo $d;
-			$interval = DateInterval::createFromDateString((string)$current_duration + " min");
-			$d->add($interval);
-			$current_end = (string)$d;
+			$current_end = '';
+// 			$d = new DateTime($current_time);
+// echo $d;
+// 			$interval = DateInterval::createFromDateString((string)$current_duration + " min");
+// 			$d->add($interval);
+// 			$current_end = (string)$d;
 	
-// 			if ($current_duration < 60) :
-// 				$dt = strtotime($current_time) + strtotime(
-// 			if ($t_minute + $current_duration < 60) :
-// 				$current_end = $t_hour . ':' . (string)($t_minute + $current_duration);
-// 			else :
-// 				$t_hour = (int)($t_minute + $current_duration) / 60;
-// 				$t_m = ($t_minute + $current_duration) - $t_hour * 60;
-// 				$current_end = $t_hour . ':' . (string)$t_m;
-// 			endif;
 echo "\n";
 			$current_dow = date("N");
 			echo $current_end;
