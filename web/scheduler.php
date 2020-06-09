@@ -15,8 +15,6 @@
 
 			$current_end = '';
 			
-			echo ('2000-01-01 ' . $s->on_tod . ':00');
-			echo "\n";
 			if ((string)$s->on_tod != '') :
 				$d = new DateTime('2000-01-01 ' . $s->on_tod . ':00');
 				echo $d->format('Y-m-d H:i');
@@ -25,11 +23,8 @@
 				$current_end = $d->format('H:i');
 			endif;
 	
-			echo "\n";
 			$current_dow = date("N"); 
-			echo $current_end;
-			echo '#####--';
-			echo "\n";
+		
 			$sun = get_sunset_sunrise(); 
 			$is_sunset  = (bool)($current_time==$sun["sunset"]);
 			$is_sunrise = (bool)($current_time==$sun["sunrise"]);
