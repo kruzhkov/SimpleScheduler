@@ -25,7 +25,8 @@
 			$t_hour = $array_on[0];	
 			$current_duration = (int)($s->off_tod);
 echo $s->off_tod;
-echo '##7';
+echo $t_hour;
+echo "\n";
 echo $current_duration;
 echo '##8';
 			if ($current_duration == 0) {
