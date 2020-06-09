@@ -32,7 +32,7 @@ echo $current_duration;
 // 			echo '#####';
 
 			$current_end = '';
-// 			$d = new DateTime($current_time);
+			$d = new DateTime($current_time);
 // echo $d;
 // 			$interval = DateInterval::createFromDateString((string)$current_duration + " min");
 // 			$d->add($interval);
