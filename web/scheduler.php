@@ -11,30 +11,10 @@
 		if ($seconds=="00") :	
 			$current_time = date("H:i");
 
-// 			$array_on = explode(":", $s->on_tod);
-
-// 			$t_hour = 0;
-// 			$t_minute = 0;
-			
-// 			if (count($array_on) == 0) :
-// 				continue;
-// 			elseif (count($array_on) > 1) :
-// 				$t_minute = (int)$array_on[1];
-// 			endif;
-
-// 			$t_hour = $array_on[0];	
 			$current_duration = (int)($s->off_tod);
 
-// 			if ($current_duration == 0) :
-// 				continue;
-// 			endif;
-
-// 			echo '#####';
-
 			$current_end = '';
-			$d = new DateTime('2000-01-01 00:00:00');
-// 			$d = new DateTime('2000-01-01 ' + $s->on_tod);
-// 			$d = DateTime::createFromFormat('Y-m-d H:i',  '2000-01-01 ' + $s->on_tod);  
+			$d = new DateTime('2000-01-01 ' + $s->on_tod + ':00');
 			echo $d->format('Y-m-d H:i');
 			$interval = DateInterval::createFromDateString((string)$current_duration . " min");
 			$d->add($interval);
