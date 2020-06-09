@@ -14,18 +14,16 @@
 			$current_duration = (int)($s->off_tod);
 
 			$current_end = '';
-
-			if ((string)$s->on_tod == '') :
-				continue;
-			endif;
 			
 			echo ('2000-01-01 ' . $s->on_tod . ':00');
 			echo "\n";
-			$d = new DateTime('2000-01-01 ' . $s->on_tod . ':00');
-			echo $d->format('Y-m-d H:i');
-			$interval = DateInterval::createFromDateString((string)$current_duration . " min");
-			$d->add($interval);
-			$current_end = $d->format('H:i');
+			if ((string)$s->on_tod != '') :
+				$d = new DateTime('2000-01-01 ' . $s->on_tod . ':00');
+				echo $d->format('Y-m-d H:i');
+				$interval = DateInterval::createFromDateString((string)$current_duration . " min");
+				$d->add($interval);
+				$current_end = $d->format('H:i');
+			endif;
 	
 			echo "\n";
 			$current_dow = date("N"); 
