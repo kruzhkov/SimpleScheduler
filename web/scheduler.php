@@ -26,7 +26,7 @@
 			$current_duration = (int)($s->off_tod);
 echo '##7';
 echo $current_duration;
-echo '##8'
+echo '##8';
 			if ($current_duration == 0) {
 				continue;
 			}
