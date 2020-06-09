@@ -32,17 +32,17 @@ echo $current_duration;
 // 			echo '#####';
 
 			$current_end = '';
-			$d = new DateTime((string)$t_hour . ':' . (string)$t_minute);
+			$d = new DateTime('2000-01-01 ' + $s->on_tod);
 			$interval = DateInterval::createFromDateString((string)$current_duration . " min");
 			echo $d->format('Y-m-d H:i');
-// 			$d->add($interval);
-// 			$current_end = (string)$d;
+			$d->add($interval);
+			$current_end = $d->format('H:i');
 	
 			echo "\n";
 			$current_dow = date("N"); 
 			echo $current_end;
 			echo '#####--';
-			$sun = get_sunset_sunrise();
+			$sun = get_sunset_sunrise(); 
 			$is_sunset  = (bool)($current_time==$sun["sunset"]);
 			$is_sunrise = (bool)($current_time==$sun["sunrise"]);
 			
