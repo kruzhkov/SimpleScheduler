@@ -25,11 +25,11 @@
 			$t_hour = $array_on[0];	
 			$current_duration = (int)($s->off_tod);
 echo $current_duration;
-			if ($current_duration == 0) :
-				continue;
-			endif;
+// 			if ($current_duration == 0) :
+// 				continue;
+// 			endif;
 
-			echo '#####';
+// 			echo '#####';
 
 			$d = new DateTime($current_time);
 			$interval = DateInterval::createFromDateString((string)$current_duration + " min");
