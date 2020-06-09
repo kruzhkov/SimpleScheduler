@@ -21,14 +21,16 @@
 			} elseif (count($array_on) > 1) {
 				$t_minute = (int)$array_on[1];
 			}
-echo '##4';
+
 			$t_hour = $array_on[0];	
 			$current_duration = (int)($s->off_tod);
-echo '##5';
+echo '##7';
+echo $current_duration;
+echo '##8'
 			if ($current_duration == 0) {
 				continue;
 			}
-echo '##6';
+echo '##9';
 			$current_end = $t_hour . ':' . (string)($t_minute + $current_duration);
 			$current_dow = date("N");
 			echo $current_end;
