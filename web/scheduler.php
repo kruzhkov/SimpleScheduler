@@ -11,6 +11,12 @@
 		if ($seconds=="00") :
 			
 			$current_time = date("H:i");
+
+echo $s->on_tod;
+echo "\n";
+echo $s->off_tod;
+echo "--";
+
 			$array_on = explode(":", $s->on_tod);
 
 			$t_hour = 0;
@@ -24,15 +30,15 @@
 
 			$t_hour = $array_on[0];	
 			$current_duration = (int)($s->off_tod);
-echo $s->off_tod;
-echo $t_hour;
-echo "\n";
-echo $current_duration;
-echo '##8';
-			if ($current_duration == 0) {
-				continue;
-			}
-echo '##9';
+// echo $s->off_tod;
+// echo $t_hour;
+// echo "\n";
+// echo $current_duration;
+// echo '##8';
+// 			if ($current_duration == 0) {
+// 				continue;
+// 			}
+// echo '##9';
 			$current_end = $t_hour . ':' . (string)($t_minute + $current_duration);
 			$current_dow = date("N");
 			echo $current_end;
