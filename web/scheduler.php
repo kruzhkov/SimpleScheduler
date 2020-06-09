@@ -33,9 +33,9 @@ echo $current_duration;
 
 			$current_end = '';
 			$d = new DateTime($current_time);
-			$interval = DateInterval::createFromDateString((string)$current_duration + " min");
-			$d->add($interval);
-			$current_end = (string)$d;
+// 			$interval = DateInterval::createFromDateString((string)$current_duration + " min");
+// 			$d->add($interval);
+// 			$current_end = (string)$d;
 	
 			echo "\n";
 			$current_dow = date("N");
