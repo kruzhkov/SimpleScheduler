@@ -16,18 +16,18 @@
   "map": [ "share:rw" ],  
   "options": {
 	"translations": {
-		"text_monday": "Monday",
-		"text_tuesday": "Tuesday",
-		"text_wednesday": "Wednesday",
-		"text_thursday": "Thursday",
-		"text_friday": "Friday",
-		"text_saturday": "Saturday",
-		"text_sunday": "Sunday",
-		"text_ON": "Turn ON",
-		"text_OFF": "Turn OFF",
-		"text_save": "Save",
+		"text_monday": "Понедельник",
+		"text_tuesday": "Вторник",
+		"text_wednesday": "Среда",
+		"text_thursday": "Четверг",
+		"text_friday": "Пяница",
+		"text_saturday": "Суббота",
+		"text_sunday": "Воскресенье",
+		"text_ON": "Запуск",
+		"text_OFF": "Длительность",
+		"text_save": "Сохранить",
 		"text_enabled": "Enabled",
-		"text_device": "Device"
+		"text_device": "Устройство"
 	},
 	"components": {
 		"light": true,
