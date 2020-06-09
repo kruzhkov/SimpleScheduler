@@ -13,13 +13,16 @@
 			$current_time = date("H:i");
 			$array_on = explode(":", $s->on_tod);
 
+			echo '##1';
 			$t_hour = 0;
 			$t_minute = 0;
+			echo '##2';
 			if (count($array_on) == 0) {
 				continue;
 			} elseif (count($array_on) > 1) {
 				$t_minute = (int)$array_on[1];
 			}
+echo '##3';
 			$t_hour = $array_on[0];	
 			$current_duration = (int)($s->off_tod);
 			if ($current_duration == 0) {
