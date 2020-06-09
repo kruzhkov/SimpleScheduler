@@ -34,7 +34,7 @@ echo $current_duration;
 			$current_end = '';
 			$d = new DateTime('2000-01-01');
 			$interval = DateInterval::createFromDateString((string)$current_duration + " min");
-			echo (string)$d;
+			echo $d->format('Y-m-d');
 // 			$d->add($interval);
 // 			$current_end = (string)$d;
 	
