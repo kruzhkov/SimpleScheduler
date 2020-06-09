@@ -82,7 +82,7 @@
 							<label class="checkbox-inline"><input type="checkbox" name="on_dow[]" value="<?php echo $wd; ?>"><?php echo substr($weekdays[$wd],0,2); ?></label>
 						<?php endfor; ?>
 					</td>
-					<td><input type="text" name="off_tod" class="form-control input-sm" placeholder="00:00 / sunset / sunrise"></td>
+					<td width="30px"><input type="text" name="off_tod" class="form-control input-sm" placeholder="00:00 / sunset / sunrise"></td>
 					<td>
 											
 					</td>							
@@ -96,7 +96,7 @@
 					  <td><span id="select_<?php echo $s->id ?>" data-toggle="tooltip" data-placement="top" title="<?php echo $s->entity_id ?>"><strong><?php echo $switch_friendly_name[$s->entity_id] ?></strong></span></td>
 					  <td class="text-green"><strong><?php echo $s->on_tod ?></strong></td>
 					  <td><?php if ($s->on_dow!="") echo get_friendly_html_dow($s->on_dow,true);  ?></td>
-					  <td class="text-red"><strong><?php echo $s->off_tod ?></strong></td>
+					  <td class="text-red" width="30px"><strong><?php echo $s->off_tod ?></strong></td>
 					  <td></td>
 					  <td><button type="button" onclick="showForm('<?php echo $s->id ?>')" class="btn btn-default btn-circle bg-primary"><span class="mdi mdi-pencil" ></span></button></td>
 				  </tr>
@@ -114,7 +114,7 @@
 								<label class="checkbox-inline"><input type="checkbox" name="on_dow[]" value="<?php echo $wd; ?>" <?php echo is_checked($s->on_dow,$wd); ?> ><?php echo substr($weekdays[$wd],0,2); ?></label>
 							<?php endfor; ?>							
 						</td>
-						<td><input type="text" name="off_tod" class="form-control input-sm"  value="<?php echo $s->off_tod ?>"></td>
+						<td width="30px"><input type="text" name="off_tod" class="form-control input-sm"  value="<?php echo $s->off_tod ?>"></td>
 						<td>							
 						</td>						
 						<td>
