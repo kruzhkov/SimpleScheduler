@@ -12,12 +12,22 @@
 			
 			$current_time = date("H:i");
 			$array_on = explode(":", $s->on_tod);
-			$t_hour = $array_on[0];
-			$t_minute = (int)$array_on[1];
+
+			$t_hour = 0;
+			$t_minute = 0;
+			if (count($array_on) == 0) {
+				continue;
+			} elseif (count($array_on) > 1) {
+				$t_minute = (int)$array_on[1];
+			}
+			$t_hour = $array_on[0];	
 			$current_duration = (int)($s->off_tod);
+			if ($current_duration == 0) {
+				continue;
+			}
+
 			$current_end = $t_hour . ':' . (string)($t_minute + $current_duration);
 			$current_dow = date("N");
-			echo '############';
 			echo $current_end;
 			
 			$sun = get_sunset_sunrise();
