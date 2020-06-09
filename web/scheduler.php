@@ -28,6 +28,15 @@
 			if ($current_duration == 0) {
 				continue;
 			}
+
+			$current_end = '';
+			if ($t_minute + $current_duration < 60) :
+				$current_end = $t_hour . ':' . (string)($t_minute + $current_duration);
+			else :
+				$t_hour = (int)($t_minute + $current_duration) / 60;
+				$t_m = 
+				$current_end = $t_hour . ':' . (string)($t_minute + $current_duration);
+			endif;
 echo '##9';
 			$current_end = $t_hour . ':' . (string)($t_minute + $current_duration);
 			$current_dow = date("N");
