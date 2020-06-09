@@ -14,6 +14,10 @@
 			$current_duration = (int)($s->off_tod);
 
 			$current_end = '';
+
+			if ($s->on_tod == '') :
+				continue;
+			endif;
 			
 			echo ('2000-01-01 ' . $s->on_tod . ':00');
 			echo "\n";
