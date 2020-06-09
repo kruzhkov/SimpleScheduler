@@ -32,7 +32,8 @@
 // 			echo '#####';
 
 			$current_end = '';
-			$d = new DateTime('2000-01-01 ' + $s->on_tod);
+// 			$d = new DateTime('2000-01-01 ' + $s->on_tod);
+			$d = DateTime.createFromFormat('H:i', $s->on_tod);  
 			echo $d->format('Y-m-d H:i');
 			$interval = DateInterval::createFromDateString((string)$current_duration . " min");
 			$d->add($interval);
