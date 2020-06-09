@@ -25,9 +25,9 @@
 			$t_hour = $array_on[0];	
 			$current_duration = (int)($s->off_tod);
 
-			if ($current_duration == 0) {
+			if ($current_duration == 0) :
 				continue;
-			}
+			endif;
 
 			echo '#####';
 
