@@ -15,7 +15,9 @@
 
 			$current_end = '';
 			
-			$d = new DateTime('2000-01-01 ' . $s->on_tod . ':00');
+			echo ('2000-01-01 ' + $s->on_tod + ':00');
+			echo "\n";
+			$d = new DateTime('2000-01-01 ' + $s->on_tod + ':00');
 			echo $d->format('Y-m-d H:i');
 			$interval = DateInterval::createFromDateString((string)$current_duration . " min");
 			$d->add($interval);
