@@ -76,7 +76,7 @@
 			      <input type="hidden" name="enabled" value="1" >				
 					<td></td>
 					<td><select name="entity_id" class="form-control"><?php echo $select_option ?></select></td>
-					<td><input type="text" name="on_tod" class="form-control input-sm" placeholder="00:00 / sunset / sunrise"></td>
+					<td width="200px"><input type="text" name="on_tod" class="form-control input-sm" placeholder="00:00 / sunset / sunrise"></td>
 					<td>
 						<?php for ($wd=1 ; $wd<=7; $wd++) : ?>
 							<label class="checkbox-inline"><input type="checkbox" name="on_dow[]" value="<?php echo $wd; ?>"><?php echo substr($weekdays[$wd],0,2); ?></label>
@@ -94,7 +94,7 @@
 				  <tr id="rowShow_<?php echo $s->id ?>" style="opacity: <?php echo ($s->enabled) ? "1" : ".3" ?>">
 					  <td class="text-center"><span class="mdi mdi-36px <?php echo ($s->enabled) ? "mdi-toggle-switch text-green" : "mdi-toggle-switch-off-outline"; ?> resize-icon" ></span></td>
 					  <td><span id="select_<?php echo $s->id ?>" data-toggle="tooltip" data-placement="top" title="<?php echo $s->entity_id ?>"><strong><?php echo $switch_friendly_name[$s->entity_id] ?></strong></span></td>
-					  <td class="text-green"><strong><?php echo $s->on_tod ?></strong></td>
+					  <td class="text-green" width="200px"><strong><?php echo $s->on_tod ?></strong></td>
 					  <td><?php if ($s->on_dow!="") echo get_friendly_html_dow($s->on_dow,true);  ?></td>
 					  <td class="text-red" width="30px"><strong><?php echo $s->off_tod ?></strong></td>
 					  <td></td>
@@ -108,7 +108,7 @@
 					 <input type="hidden" name="action" value="update" >
 						<td><label class="checkbox-inline"><input type="checkbox" name="enabled" value="1" <?php echo ($s->enabled) ? "checked" : "" ; ?> > <?php echo $translations->text_enabled; ?></label></td>
 						<td><select id="select_f_<?php echo $s->id ?>" name="entity_id"  class="form-control"><?php echo $select_option ?></select></td>
-						<td><input type="text" name="on_tod" class="form-control input-sm" value="<?php echo $s->on_tod ?>"></td>
+						<td width="200px"><input type="text" name="on_tod" class="form-control input-sm" value="<?php echo $s->on_tod ?>"></td>
 						<td>
 							<?php for ($wd=1 ; $wd<=7; $wd++) : ?>
 								<label class="checkbox-inline"><input type="checkbox" name="on_dow[]" value="<?php echo $wd; ?>" <?php echo is_checked($s->on_dow,$wd); ?> ><?php echo substr($weekdays[$wd],0,2); ?></label>
