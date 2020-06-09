@@ -15,7 +15,7 @@
 
 			$current_end = '';
 
-			if ($s->on_tod == '') :
+			if ((string)$s->on_tod == '') :
 				continue;
 			endif;
 			
