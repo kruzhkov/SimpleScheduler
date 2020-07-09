@@ -57,15 +57,18 @@
 <body>
 
 	<div class="table-responsive">
-		<table class="table " id="dtable">
+		<table class="table " id="alltable">
 			<thead class="thead-dark">
-			<tr>
-			  <th>&nbsp;</th>
-			  <th>Капельный полив:</th>
-			  <th><input type="checkbox" name="on_drop_all" value="true"</th>
-			  <th>Спринклерный полив:</th>
-			  <th><input type="checkbox" name="on_sprinkler_all" value="true"</th>
-			<tr>
+				<tr>
+				  <th>&nbsp;</th>
+				  <th>Капельный полив:</th>
+				  <th><input type="checkbox" name="on_drop_all" value="checked"</th>
+				  <th>Спринклерный полив:</th>
+				  <th><input type="checkbox" name="on_sprinkler_all" value="checked"</th>
+				<tr>
+			</thead>
+		</table>
+		<table class="table " id="dtable">
 			  <th scope="col">&nbsp;</th>
 			  <th scope="col"><?php echo $translations->text_device; ?></th>
 			  <th scope="col"><?php echo $translations->text_ON; ?></th>
