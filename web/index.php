@@ -55,7 +55,7 @@
 <link rel="stylesheet" href="style.css" >
 </head>
 <body>
-	<header>
+	
 		<div class="table-responsive">
 			<table id="alltable">
 				<thead class="thead-dark">
@@ -70,7 +70,7 @@
 				</thead>
 			</table>	
 		</div>
-	</header>
+	
 	<div class="table-responsive">
 	
 		<table class="table " id="dtable">
