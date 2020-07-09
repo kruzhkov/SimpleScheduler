@@ -55,30 +55,35 @@
 <link rel="stylesheet" href="style.css" >
 </head>
 <body>
-
+	<header>
+		<div class="table-responsive">
+			<table id="alltable">
+				<thead class="thead-dark">
+					<tr>
+						<th>Капельный полив:</th>
+						<th><input type="text" size="3" value="100">&nbsp;%&nbsp;&nbsp;&nbsp;</th>
+						<th><input type="checkbox" name="on_drop_all" checked></th>
+						<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Спринклерный полив:</th>
+						<th><input type="text" size="3" value="100">&nbsp;%&nbsp;&nbsp;&nbsp;</th>
+						<th><input type="checkbox" name="on_sprinkler_all" checked></th>
+					</tr>
+				</thead>
+			</table>	
+		</div>
+	</header>
 	<div class="table-responsive">
-		<table class="table " id="alltable">
+	
+		<table class="table " id="dtable">
 			<thead class="thead-dark">
 				<tr>
-				  <th>&nbsp;</th>
-				  <th>Капельный полив:</th>
-				  <th><input type="checkbox" name="on_drop_all" checked></th>
-				  <th>Спринклерный полив:</th>
-				  <th><input type="checkbox" name="on_sprinkler_all" checked></th>
-				<tr>
-			</thead>
-		</table>	
-	</div>
-	<div class="table-responsive">
-		<table class="table " id="dtable">
-			  <th scope="col">&nbsp;</th>
-			  <th scope="col"><?php echo $translations->text_device; ?></th>
-			  <th scope="col"><?php echo $translations->text_ON; ?></th>
-			  <th scope="col"></th>
-			  <th scope="col"><?php echo $translations->text_OFF; ?></th>
-			  <th scope="col"></th>
-			  <th scope="col"></th>
-			</tr>
+					<th>&nbsp;</th>
+					<th scope="col"><?php echo $translations->text_device; ?></th>
+					<th scope="col"><?php echo $translations->text_ON; ?></th>
+					<th scope="col"></th>
+					<th scope="col"><?php echo $translations->text_OFF; ?></th>
+					<th scope="col"></th>
+					<th scope="col"></th>
+				</tr>
 			</thead>
 			<tbody>	
 			  <tr id="rowFormNew" style="display:none" >
