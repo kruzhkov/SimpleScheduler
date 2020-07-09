@@ -62,9 +62,9 @@
 				<tr>
 				  <th>&nbsp;</th>
 				  <th>Капельный полив:</th>
-				  <th><input type="checkbox" name="on_drop_all" value="checked"</th>
+				  <th><input type="checkbox" name="on_drop_all" checked></th>
 				  <th>Спринклерный полив:</th>
-				  <th><input type="checkbox" name="on_sprinkler_all" value="checked"</th>
+				  <th><input type="checkbox" name="on_sprinkler_all" checked></th>
 				<tr>
 			</thead>
 		</table>	
