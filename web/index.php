@@ -55,12 +55,12 @@
 <link rel="stylesheet" href="style.css" >
 </head>
 <body>
-	
+	<header>
 		<div class="table-responsive">
-			<table id="alltable">
+			<table class="table " id="alltable">
 				<thead class="thead-dark">
 					<tr>
-						<th>Капельный полив:</th>
+						<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Капельный полив:</th>
 						<th><input type="text" size="3" value="100">&nbsp;%&nbsp;&nbsp;&nbsp;</th>
 						<th><input type="checkbox" name="on_drop_all" checked></th>
 						<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Спринклерный полив:</th>
@@ -70,7 +70,7 @@
 				</thead>
 			</table>	
 		</div>
-	
+	</header>
 	<div class="table-responsive">
 	
 		<table class="table " id="dtable">
