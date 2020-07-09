@@ -3,6 +3,11 @@
 	margin-top: 0 !important;
 }
 
+#alltable {
+	margin-top: 0 !important;
+	text-align: left;
+}
+
 .dowIcon  {
 	border: 0px solid ;
 	border-radius: 20px;
@@ -96,8 +101,8 @@ TABLE TR {
 	border-top: 2px solid black;
 }
 
-TABLE THEAD {
+/* TABLE THEAD {
 	display: none;
-}
+} */
 
 }
