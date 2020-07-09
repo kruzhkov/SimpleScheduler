@@ -60,6 +60,12 @@
 		<table class="table " id="dtable">
 			<thead class="thead-dark">
 			<tr>
+			  <th>&nbsp;</th>
+			  <th>Капельный полив:</th>
+			  <th><input type="checkbox" name="on_drop_all" value="true"</th>
+			  <th>Спринклерный полив:</th>
+			  <th><input type="checkbox" name="on_sprinkler_all" value="true"</th>
+			<tr>
 			  <th scope="col">&nbsp;</th>
 			  <th scope="col"><?php echo $translations->text_device; ?></th>
 			  <th scope="col"><?php echo $translations->text_ON; ?></th>
