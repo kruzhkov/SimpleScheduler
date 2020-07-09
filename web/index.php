@@ -67,7 +67,9 @@
 				  <th><input type="checkbox" name="on_sprinkler_all" value="checked"</th>
 				<tr>
 			</thead>
-		</table>
+		</table>	
+	</div>
+	<div class="table-responsive">
 		<table class="table " id="dtable">
 			  <th scope="col">&nbsp;</th>
 			  <th scope="col"><?php echo $translations->text_device; ?></th>
