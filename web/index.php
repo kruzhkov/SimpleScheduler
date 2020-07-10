@@ -172,7 +172,7 @@
 	
 	<footer class="footer">
       <div class="statusbar">
-<!-- 	 	<p> -->
+	 	<p>
 			<div class="table-responsive">
 					<table  id="alltable">
 						<thead class="thead-dark">
@@ -187,7 +187,7 @@
 						</thead>
 					</table>	
 				</div>
-<!-- 		</p> -->
+		</p>
         <!-- <p>
 			<span data-toggle="modal" data-target="#exampleModalLong">Scheduler:</span> <span class="statusbar_span" id="schedulerstatus"><?php echo (is_scheduler_running()) ? "" : "NOT " ?>RUNNING</span>
 			<span class="statusbar_span"><?php echo "Sunrise ".$sun["sunrise"] ?></span>
