@@ -55,7 +55,7 @@
 <link rel="stylesheet" href="style.css" >
 </head>
 <body>
-	<header>
+	<!-- <header>
 		<div class="table-responsive">
 			<table class="table " id="alltable">
 				<thead class="thead-dark">
@@ -70,7 +70,7 @@
 				</thead>
 			</table>	
 		</div>
-	</header>
+	</header> -->
 	<div class="table-responsive">
 	
 		<table class="table " id="dtable">
@@ -172,11 +172,27 @@
 	
 	<footer class="footer">
       <div class="statusbar">
-        <p>
+	 	<p>
+			<div class="table-responsive">
+					<table  id="alltable">
+						<thead class="thead-dark">
+							<tr>
+								<th>Капельный полив:</th>
+								<th><input type="text" size="3" value="100">&nbsp;%&nbsp;&nbsp;&nbsp;</th>
+								<th><input type="checkbox" name="on_drop_all" checked></th>
+								<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Спринклерный полив:</th>
+								<th><input type="text" size="3" value="100">&nbsp;%&nbsp;&nbsp;&nbsp;</th>
+								<th><input type="checkbox" name="on_sprinkler_all" checked></th>
+							</tr>
+						</thead>
+					</table>	
+				</div>
+		</p>
+        <!-- <p>
 			<span data-toggle="modal" data-target="#exampleModalLong">Scheduler:</span> <span class="statusbar_span" id="schedulerstatus"><?php echo (is_scheduler_running()) ? "" : "NOT " ?>RUNNING</span>
 			<span class="statusbar_span"><?php echo "Sunrise ".$sun["sunrise"] ?></span>
 			<span class="statusbar_span"><?php echo "Sunset ".$sun["sunset"] ?></span>
-		</p>
+		</p> -->
       </div>
     </footer>
 
